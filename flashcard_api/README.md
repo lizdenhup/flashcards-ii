@@ -12,3 +12,13 @@ This command generated a new Rails 5 API called 'flashcard_api' and set the data
 gem 'rack-cors'
 ```
 to gemfile. Ran 'bundle' to install the rack-cors gem.
+
+
+
+
+
+
+
+
+#### Things to watch out for next time
+-- add secrets.yml file to global .gitignore so that it doesn't get automatically tracked to Git when initializing a Rails app. 
