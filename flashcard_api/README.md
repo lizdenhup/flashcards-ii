@@ -7,8 +7,9 @@
 rails new flashcard_api --database=postgresql --api
 ~~~~
 This command generated a new Rails 5 API called 'flashcard_api' and set the database to postgresql in preparation for deploying the app to Heroku.
-3. cd'd into flashcard_api directory. Added
+3. cd'd into flashcard_api directory. Uncommented
 ```
 gem 'rack-cors'
+gem 'jbuilder', '~> 2.5'
 ```
-to gemfile. Ran 'bundle' to install the rack-cors gem.
+in gemfile. Ran 'bundle' to install these gems.
