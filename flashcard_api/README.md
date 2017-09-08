@@ -13,3 +13,18 @@ gem 'rack-cors'
 gem 'jbuilder', '~> 2.5'
 ```
 in gemfile. Ran 'bundle' to install these gems.
+4. Inputted the following commands into the terminal, in this order:
+```
+rails g model user email:string nickname:string password_digest:string
+```
+```
+rails g model subject name:string
+```
+```
+rails g model deck user:references subject:references
+```
+```
+rails g model card deck:references question:text answer:text
+```
+(Have not yet migrated dbs).
+- Also added faraday, JWT, and bcrypt to gemfile and ran bundle.
