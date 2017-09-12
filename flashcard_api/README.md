@@ -28,3 +28,5 @@ rails g model card deck:references question:text answer:text
 ```
 (Have not yet migrated dbs).
 - Also added faraday, JWT, and bcrypt to gemfile and ran bundle.
+5. Added has_secure_password macro to user model.
+6. 
