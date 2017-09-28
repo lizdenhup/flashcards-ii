@@ -29,4 +29,17 @@ rails g model card deck:references question:text answer:text
 (Have not yet migrated dbs).
 - Also added faraday, JWT, and bcrypt to gemfile and ran bundle.
 5. Added has_secure_password macro to user model.
-6. 
+6. Used this tutorial [here](https://www.codementor.io/devops/tutorial/getting-started-postgresql-server-mac-osx) to figure out how to add roles, etc with Postgres.
+7. Once pg database was configured correctly I ran
+```
+rake db:create
+```
+and 
+```
+rake db:migrate
+```
+I then checked the status of my migrations with
+```
+rake db:migrate:status
+```
+and found that all four tables (users, subjects, decks, cards) were up. 

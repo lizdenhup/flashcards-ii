@@ -18,15 +18,17 @@ default: &default
   adapter: postgresql
   encoding: unicode
   template: template0
-  username: flashcard_api
+  username: lizdenhup
   # For details on connection pooling, see Rails configuration guide
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
 
 development:
   <<: *default
-  database: flashcard_api_development
+  username: lizdenhup
+  database: flashcard_api_production
 
+  
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
   # When left blank, postgres will use the default role. This is
@@ -82,6 +84,6 @@ test:
 #
 production:
   <<: *default
-  database: flashcard_api_production
-  username: flashcard_api
-  password: <%= ENV['FLASHCARD_API_DATABASE_PASSWORD'] %>
+  database: 'flashcard_api'
+  username: 'postgres'
+  password: 'postgres'
